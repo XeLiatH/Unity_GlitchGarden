@@ -4,10 +4,17 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    [SerializeField] float projectileSpeed = 1f;
+    [SerializeField] float speed = 1f;
+    [SerializeField] float damage = 50f;
 
     void Update()
     {
-        transform.Translate(Vector2.right * projectileSpeed * Time.deltaTime);
+        transform.Translate(Vector2.right * speed * Time.deltaTime);
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        var health = other.GetComponent<Health>();
+        health.DealDamage(damage);
     }
 }
