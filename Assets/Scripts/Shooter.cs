@@ -5,7 +5,8 @@ using UnityEngine;
 
 public class Shooter : MonoBehaviour
 {
-    [SerializeField] GameObject projectile, gun;
+    [SerializeField] Projectile projectile;
+    [SerializeField] GameObject gun;
 
     private AttackerSpawner myLaneSpawner;
     private Animator animator;
@@ -42,6 +43,7 @@ public class Shooter : MonoBehaviour
 
     public void Fire()
     {
-        Instantiate(projectile, gun.transform.position, Quaternion.identity);
+        Projectile newProjectile = Instantiate(projectile, gun.transform.position, Quaternion.identity) as Projectile;
+        newProjectile.transform.parent = transform;
     }
 }
