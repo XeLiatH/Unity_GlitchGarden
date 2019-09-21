@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4998842848994812164}
   - component: {fileID: -471177401278372365}
   - component: {fileID: 1386594030209030442}
+  - component: {fileID: 9041897600242746803}
   m_Layer: 0
   m_Name: Cactus
   m_TagString: Untagged
@@ -28,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 1546027321120466038}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.937982, y: 3.0770066, z: -2.0751953}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children:
   - {fileID: 3458140077574946632}
   m_Father: {fileID: 0}
@@ -81,6 +82,32 @@ MonoBehaviour:
   projectile: {fileID: 6746309043412201888, guid: 9af5e3d8c42e5d1408bcdeb3bf844022,
     type: 3}
   gun: {fileID: 3402365253140252786}
+--- !u!61 &9041897600242746803
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1546027321120466038}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &3402365253140252786
 GameObject:
   m_ObjectHideFlags: 0
@@ -105,7 +132,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3402365253140252786}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.45, y: 0.03, z: 0}
+  m_LocalPosition: {x: -0.45, y: 0.03, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3458140077574946632}
