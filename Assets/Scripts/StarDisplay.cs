@@ -20,6 +20,11 @@ public class StarDisplay : MonoBehaviour
         starText.text = stars.ToString();
     }
 
+    public int GetStars()
+    {
+        return stars;
+    }
+
     public void AddStars(int amount)
     {
         stars += amount;
