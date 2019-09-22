@@ -23,6 +23,11 @@ public class LevelLoader : MonoBehaviour
         SceneManager.LoadScene(currentSceneIndex + 1);
     }
 
+    public void LoadLoseScene()
+    {
+        SceneManager.LoadScene("Lose Scene");
+    }
+
     private IEnumerator DelayNextScene(int sceneNumber, int seconds = 0)
     {
         yield return new WaitForSeconds(seconds);
