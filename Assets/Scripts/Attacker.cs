@@ -10,6 +10,11 @@ public class Attacker : MonoBehaviour
     Animator animator;
     Defender currentTarget;
 
+    void Awake()
+    {
+        FindObjectOfType<LevelController>().AttackerSpawned();
+    }
+
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -19,6 +24,11 @@ public class Attacker : MonoBehaviour
     {
         transform.Translate(Vector2.left * currentSpeed * Time.deltaTime);
         UpdateAnimationState();
+    }
+
+    void OnDestroy()
+    {
+        FindObjectOfType<LevelController>().AttackerKilled();
     }
 
     private void UpdateAnimationState()

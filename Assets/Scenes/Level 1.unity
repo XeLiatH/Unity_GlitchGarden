@@ -210,7 +210,7 @@ MonoBehaviour:
   attackerPrefabs:
   - {fileID: 4014534784810828283, guid: 1e066107f80699841967ac3c7c5c96a7, type: 3}
   - {fileID: 3348422973869382593, guid: 616d4a18dbd2a8e4782efaed29521f3f, type: 3}
-  minSpawnDelay: 1
+  minSpawnDelay: 5
   maxSpawnDelay: 5
 --- !u!4 &169970083 stripped
 Transform:
@@ -611,7 +611,7 @@ MonoBehaviour:
   attackerPrefabs:
   - {fileID: 4014534784810828283, guid: 1e066107f80699841967ac3c7c5c96a7, type: 3}
   - {fileID: 3348422973869382593, guid: 616d4a18dbd2a8e4782efaed29521f3f, type: 3}
-  minSpawnDelay: 1
+  minSpawnDelay: 5
   maxSpawnDelay: 5
 --- !u!4 &1783934444 stripped
 Transform:
@@ -816,6 +816,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 1184536900, guid: f8c35754065a9bc4da4d90ab327319d9, type: 3}
+      propertyPath: m_Value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1464497416, guid: f8c35754065a9bc4da4d90ab327319d9, type: 3}
       propertyPath: m_AnchorMin.x
       value: 0
@@ -839,6 +843,10 @@ PrefabInstance:
     - target: {fileID: 626515856, guid: f8c35754065a9bc4da4d90ab327319d9, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 626515856, guid: f8c35754065a9bc4da4d90ab327319d9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 8.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8c35754065a9bc4da4d90ab327319d9, type: 3}
