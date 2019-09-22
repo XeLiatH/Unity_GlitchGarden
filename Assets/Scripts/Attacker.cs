@@ -6,9 +6,12 @@ public class Attacker : MonoBehaviour
 {
     [Range(0f, 2f)] [SerializeField] float currentSpeed = 1f;
 
+    Animator animator;
+    Defender currentTarget;
+
     void Start()
     {
-
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -19,5 +22,11 @@ public class Attacker : MonoBehaviour
     public void SetMovementSpeed(float speed)
     {
         currentSpeed = speed;
+    }
+
+    public void Attack(Defender target)
+    {
+        animator.SetBool("IsAttacking", true);
+        currentTarget = target;
     }
 }
