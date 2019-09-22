@@ -83,7 +83,7 @@ PrefabInstance:
     - target: {fileID: 4063513942913478946, guid: 2f8965c8c9e395e4cba076be2dec3750,
         type: 3}
       propertyPath: m_Name
-      value: LifeDamageCollider
+      value: Life Damage Collider
       objectReference: {fileID: 0}
     - target: {fileID: 4063513942913478972, guid: 2f8965c8c9e395e4cba076be2dec3750,
         type: 3}
@@ -238,12 +238,12 @@ PrefabInstance:
     - target: {fileID: 5931373669166798308, guid: 4910745da20fed447ae00b152c74ce40,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5931373669166798308, guid: 4910745da20fed447ae00b152c74ce40,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5931373669166798308, guid: 4910745da20fed447ae00b152c74ce40,
         type: 3}
