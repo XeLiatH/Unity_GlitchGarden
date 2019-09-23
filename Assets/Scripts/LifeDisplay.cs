@@ -5,13 +5,15 @@ using UnityEngine.UI;
 
 public class LifeDisplay : MonoBehaviour
 {
-    [SerializeField] int lifePoints = 10;
+    [SerializeField] float baseLifePoints = 3f;
     [SerializeField] int minimalLifeDamage = 1;
 
     Text lifeText;
+    float lifePoints;
 
     void Start()
     {
+        lifePoints = baseLifePoints - PlayerPrefsController.GetDifficulty();
         lifeText = GetComponent<Text>();
         UpdateDisplay();
     }
@@ -43,7 +45,7 @@ public class LifeDisplay : MonoBehaviour
         UpdateDisplay();
     }
 
-    public int GetLifePoits()
+    public float GetLifePoits()
     {
         return lifePoints;
     }

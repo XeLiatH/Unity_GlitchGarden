@@ -65,6 +65,8 @@ public class Attacker : MonoBehaviour
 
         if (health)
         {
+            // increase damage by 10 % per difficulty
+            damage += Mathf.Round((float)(damage * 0.1 * PlayerPrefsController.GetDifficulty()));
             health.DealDamage(damage);
         }
     }

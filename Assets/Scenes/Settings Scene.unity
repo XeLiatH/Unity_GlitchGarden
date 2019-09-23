@@ -1417,9 +1417,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 832208481}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
-  m_WholeNumbers: 0
-  m_Value: 0.311
+  m_MaxValue: 2
+  m_WholeNumbers: 1
+  m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1856,5 +1856,10 @@ PrefabInstance:
       propertyPath: volumeSlider
       value: 
       objectReference: {fileID: 417719299}
+    - target: {fileID: 2958667410343284777, guid: 5c770f6b9112dc44994975951ffd1bc0,
+        type: 3}
+      propertyPath: difficultySlider
+      value: 
+      objectReference: {fileID: 1513435674}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c770f6b9112dc44994975951ffd1bc0, type: 3}
