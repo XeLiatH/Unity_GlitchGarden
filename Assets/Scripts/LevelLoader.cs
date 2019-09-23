@@ -35,6 +35,11 @@ public class LevelLoader : MonoBehaviour
         SceneManager.LoadScene("Start Scene");
     }
 
+    public void LoadSettingsScene()
+    {
+        SceneManager.LoadScene("Settings Scene");
+    }
+
     public void LoadLoseScene()
     {
         SceneManager.LoadScene("Lose Scene");
