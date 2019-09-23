@@ -9,7 +9,6 @@ public class Projectile : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(Vector2.right * speed * Time.deltaTime);
         transform.Translate(Vector2.right * speed * Time.deltaTime);
     }
 

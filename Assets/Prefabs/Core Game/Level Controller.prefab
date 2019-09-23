@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5931373669166798308}
   - component: {fileID: 5931373669166798307}
   - component: {fileID: 3763417823385640394}
+  - component: {fileID: 8140759508473392302}
   m_Layer: 0
   m_Name: Level Controller
   m_TagString: Untagged
@@ -45,6 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   winLabel: {fileID: 0}
+  loseLabel: {fileID: 0}
   waitToLoad: 4
 --- !u!82 &3763417823385640394
 AudioSource:
@@ -142,3 +144,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &8140759508473392302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5931373669166798309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1908446d0d432cb47b32cdb988db09f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  splashScreenLoadTime: 3

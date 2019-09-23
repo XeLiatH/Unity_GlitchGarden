@@ -9,12 +9,10 @@ public class LifeDisplay : MonoBehaviour
     [SerializeField] int minimalLifeDamage = 1;
 
     Text lifeText;
-    LevelLoader levelLoader;
 
     void Start()
     {
         lifeText = GetComponent<Text>();
-        levelLoader = FindObjectOfType<LevelLoader>();
         UpdateDisplay();
     }
 
@@ -35,7 +33,7 @@ public class LifeDisplay : MonoBehaviour
 
         if (lifePoints <= 0)
         {
-            levelLoader.LoadLoseScene();
+            FindObjectOfType<LevelController>().HandleLoseCondiditon();
         }
     }
 
