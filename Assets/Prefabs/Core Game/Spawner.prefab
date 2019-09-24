@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5842540831364863812
 Transform:
   m_ObjectHideFlags: 0
@@ -44,7 +44,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackerPrefabs:
-  - {fileID: 4014534784810828283, guid: 1e066107f80699841967ac3c7c5c96a7, type: 3}
   - {fileID: 3348422973869382593, guid: 616d4a18dbd2a8e4782efaed29521f3f, type: 3}
   minSpawnDelay: 4
   maxSpawnDelay: 5

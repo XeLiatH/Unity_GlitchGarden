@@ -329,7 +329,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ccce10565f9bc641a04b0733ba72db2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifePoints: 10
+  baseLifePoints: 3
   minimalLifeDamage: 1
 --- !u!1 &1184536898
 GameObject:
@@ -343,7 +343,7 @@ GameObject:
   - component: {fileID: 1184536900}
   - component: {fileID: 1184536901}
   m_Layer: 5
-  m_Name: Slider
+  m_Name: Game Timer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -934,4 +934,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f77b5f0652222b4ab3cab204e438227, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stars: 1000
+  stars: 150

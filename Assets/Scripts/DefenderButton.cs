@@ -20,10 +20,6 @@ public class DefenderButton : MonoBehaviour
         {
             costText.text = defenderPrefab.GetStarCost().ToString();
         }
-        else
-        {
-            Debug.LogError(name + " has no cost text, add some!");
-        }
     }
 
     void OnMouseDown()
